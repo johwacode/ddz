@@ -1,0 +1,64 @@
+<template name="Home">
+<head>
+	<title> SLUB: Dresdener Digitalisierungszentrum</title>
+</head>
+
+<body>
+  <div id="page">
+    {{> header}}
+    
+	<div id="content">
+	  <div class="centring">
+	    <h2>Unser Digitalisierungszentrum</h2>
+		<h3>Wie ein Buch ins Internet gelangt</h3>
+		<ul>
+		  {{#each categories}}
+			{{> category}}
+		  {{/each}}
+		</ul>
+		
+		<article id="feed">
+		  <h1>Aktuelles</h1>
+		  <p>{{aktuelles}}</p>
+		</article>
+		
+	  </div>
+	</div>
+  </div>
+</body>
+</template>
+
+
+<template name="category">
+	<li>
+		<a href="{{link}}">
+		  <img src="/images/{{image}}.jpg" />
+		  <p>{{text}}</p>
+		</a>
+	</li>
+</template>
+
+
+<template name="header">
+<header>
+	  <div id="navbarbg"> </div>
+	  <div id="headerbackgroundline"> </div>
+	  <div class="centring">
+	    <h1>
+		  <a href="#" id="homelink">Sächsische Landesbibliothek — Staats- und Universitätsbibliothek Dresden</a>
+		</h1>
+		<div id="searchbar">
+		  <div id="searchbarpic"></div>
+		  <a id="searchbarlink">Suche starten</a>
+		</div>
+	  </div>
+	</header>
+</template>
+<template name="noheader">
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</template>
+
+<template name="NotFound">
+Die angeforderte Seite wurde leider nicht gefunden.
+{{> zurueckbutton}}
+</template>
