@@ -1,7 +1,3 @@
-<template name="zurueckbutton">
-	<a href="/"> zurück </a>
-</template>
-
 <template name="Buchauswahl">
 <head>
 	<title> SLUB: Buchauswahl Digitalisierungszentrum</title>
@@ -14,10 +10,42 @@
 	<div id="content" class="2owl-carousel">
 	  <div class="centring">
 	    <h2>Die Buchauswahl</h2>
-		<h3>Was und wozu wird eigentlich digitalisiert?</h3>
+		{{> entry}}
+		{{> positionmarker}}
 	  </div>
 	</div>
 	{{> zurueckbutton}}
   </div>
 </body>
+</template>
+
+
+
+<template name="entry">
+  <article id=entry>
+    <img src="{{image}}"/>
+	<section>
+	  <h3>Was und wozu wird eigentlich digitalisiert?</h3>
+	  <p>
+	    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+	  </p>
+	</section>
+  </article>
+</template>
+
+
+<template name="positionmarker">
+	<div id="positionMarkerbox">
+	  <a class="positionMarker {{active}}" href="#"></a>
+	  <a class="positionMarker {{active}}" href="#"></a>
+	  <a class="positionMarker {{active}}" href="#"></a>
+	  <a class="positionMarker {{active}}" href="#"></a>
+	  <a class="positionMarker {{active}}" href="#"></a>
+	</div>
+</template>
+
+
+
+<template name="zurueckbutton">
+	<a id="zurueckbutton" href="/"> zurück </a>
 </template>
