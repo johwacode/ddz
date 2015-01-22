@@ -7,7 +7,7 @@ Router.map(function(){
       { text: "Die Buchauswahl",
 		image: "buchwahl",
 		link: "buchauswahl" },
-      { text: "Digitalisierungsger‰te",
+      { text: "Digitalisierungsger√§te",
 		image: "geraet",
 		link: "geraete" },
       { text: "Das digitale Buch",
