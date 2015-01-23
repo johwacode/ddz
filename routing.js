@@ -4,16 +4,16 @@ Router.map(function(){
 	  path: '/',
 	  data:
 	    {categories: [
-      { text: "Die Buchauswahl",
+      { text: "Das analoge Buch",
 		image: "buchwahl",
 		link: "buchauswahl" },
-      { text: "Digitalisierungsgeräte",
+      { text: "Digitalisierungsprozess",
 		image: "geraet",
 		link: "geraete" },
       { text: "Das digitale Buch",
 		image: "ebook",
 		link: "digitales-buch" },
-      { text: "Langzeitarchivierung",
+      { text: "Die Archivierung",
 		image: "archiv",
 		link: "archivierung" }
     ],
