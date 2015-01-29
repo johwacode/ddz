@@ -4,17 +4,20 @@
 </head>
 
 <body>
-  <div id="page">
-    {{> noheader}}
-    
+  <div id="page">    
 	<div id="content" class="2owl-carousel">
 	  <div class="centring">
-	    <h2>Die Buchauswahl</h2>
+	    <header id="sub" class="centring">
+	      <img id="currentCategory" src="/images/geraet.jpg"/>
+	      <h2>Die Buchauswahl</h2>
+		  {{> positionmarker}}
+		</header>
 		{{> entry}}
-		{{> positionmarker}}
 	  </div>
+	  <footer class="centring">
+		{{> zurueckbutton}}
+	  </footer>
 	</div>
-	{{> zurueckbutton}}
   </div>
 </body>
 </template>

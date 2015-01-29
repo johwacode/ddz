@@ -133,9 +133,13 @@ h1 a {
 }
 
 .centring {
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
   height: 100%;
+}
+
+h2{
+  margin-top: 1.5em;
 }
 
 h2,
@@ -143,7 +147,7 @@ h3 {
   position: relative;
   color: rgba(243,146,0,1);
   font-size: 3.5em;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
   font-family: "Trebuchet MS", Verdana, Arial, Helvetica, Sans-Serif;
   line-height: 110%;
@@ -173,7 +177,7 @@ ul {
   width: 100%;
   margin-left: 10px;
   margin-bottom: 1em;
-  padding-top: 6em;
+  padding-top: 9em;
 }
 
 ul:before{
@@ -182,10 +186,10 @@ ul:before{
   position: absolute;
   width: 2.35em;
   margin-left: calc(-0.35em - 5px);
-  margin-top: -9.25em;
-  height: 9.5em;
+  margin-top: -12.05em;
+  height: 12.5em;
   border: none;
-  border-left: #99ddff 4px solid;
+  border-left: #99ddff 5px solid;
 }
 
 li:first-child:before{
@@ -196,22 +200,22 @@ li:first-child:before{
 	margin-left: calc(-0.35em - 5px);
 	height: 9em;
 	border: none;
-	border-left: #99ddff 4px solid;
+	border-left: #99ddff 5px solid;
 	border-bottom: #aaccff 5px solid;
 }
 li:before{
 	content:" ";
 	display: block;
 	position: absolute;
-	width: 2.35em;
-	margin-left: -0.35em;
+	width: 2.8em;
+	margin-left: -0.8em;
 	height: 9em;
 	border: none;
 	border-bottom: #aaccff 5px solid;
 }
 
 li {
-  width: 18.5em;
+  width: calc(19em + 1px);
   display: inline-block;
   border: none;
 }
@@ -244,7 +248,7 @@ li a p{
   margin-left: 1.6em;
   line-height: 3.5em;
   font-size: 1.4em;
-  color: #555;
+  color: #666666;
   font-style: italic;
   font-weight: 600;
   text-align: center;
@@ -252,10 +256,10 @@ li a p{
 
 
 #feed{
-  margin-top: 4em;
+  margin-top: 7.5em;
   margin-right: 0.85em;
-  border: #99ddff 4px solid;
-  padding: 1.75em;
+  border: #99ddff 5px solid;
+  padding: 2em;
   padding-left: 2.35em;
 }
 #feed h1{
@@ -264,4 +268,5 @@ li a p{
 }
 #feed p{
   font-size: 1.2em;
+  padding-bottom: 0.3em;
 }
