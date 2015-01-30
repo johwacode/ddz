@@ -42,32 +42,21 @@ img#currentCategory{
   text-align: right;
 }
 
-.positionMarker:before{
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 1.8em;
-  height: 1.8em;
-  border: #99ccee solid 1px;
-  border-left: #cceeff solid 2px;
-  border-right: #cceeff solid 2px;
-}
-
 .positionMarker{
   display: inline-block;
   width: 1.8em;
   height: 1.8em;
   margin-left: 1.5em;
-}
-
-.positionMarker:hover{
-  background-color: #ccddff
+  border: #99ccee solid 1px;
+  border-left: #cceeff solid 2px;
+  border-right: #cceeff solid 2px;
 }
 
 
 /* Content */
 
 #entry{
+  display: block;
   padding-top: 2em;
   padding-bottom: 2em;
   font-size: 1.6em;
@@ -84,6 +73,10 @@ img#currentCategory{
   height: calc(20em + 4em);
   background-color: #dddddd;
   z-index: -9999;
+}
+
+#entry div{
+  margin-right: 2em;
 }
 
 #entry img{
@@ -151,4 +144,8 @@ footer{
   box-shadow: 9px 9px 18px 1px rgba(70,70,75,0.5);
   background: #99ccff;
   color: #99ccff;
+}
+
+.owl-controls{
+  display: none;
 }

@@ -1,15 +1,15 @@
-<template name="Buchauswahl">
+<template name="Subsite">
 <head>
 	<title> SLUB: Buchauswahl Digitalisierungszentrum</title>
 </head>
 
 <body>
   <div id="page">    
-	<div id="content" class="2owl-carousel">
+	<div id="content">
 	  <div class="centring">
 	    <header id="sub" class="centring">
-	      <img id="currentCategory" src="/images/geraet.jpg"/>
-	      <h2>Die Buchauswahl</h2>
+	      <img id="currentCategory" src="/images/{{image}}.jpg"/>
+	      <h2>{{headline}}</h2>
 		  {{> positionmarker}}
 		</header>
 		{{> entry}}
@@ -25,25 +25,30 @@
 
 
 <template name="entry">
-  <article id=entry>
-    <img src="/images/buchwahl.jpg"/>
-	<section>
-	  <h3>Scan-Roboter</h3>
-	  <p>
-	    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-	  </p>
-	</section>
+  
+  <article id="entry">
+  <div id="owl-example" class="owl-carousel">
+    {{#each content}}
+      <div>
+        <img src="/images/{{image}}.jpg"/>
+	    <section>
+	      <h3>{{title}}</h3>
+	      <p>
+	        {{text}}
+	      </p>
+	    </section>
+	  </div>
+	{{/each}}
+	</div>
   </article>
 </template>
 
 
 <template name="positionmarker">
 	<div id="positionMarkerbox">
-	  <a class="positionMarker {{active}}" href="#"></a>
-	  <a class="positionMarker {{active}}" href="#"></a>
-	  <a class="positionMarker {{active}}" href="#"></a>
-	  <a class="positionMarker {{active}}" href="#"></a>
-	  <a class="positionMarker {{active}}" href="#"></a>
+	  {{#each content}}
+		<a class="positionMarker {{active}}" href="owl.goTo({{index}})"></a>
+	  {{/each}}
 	</div>
 </template>
 
