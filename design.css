@@ -6,6 +6,7 @@
 body {
   font-size: 10px;
   font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  background: #111111;
 }
 
 #page {
@@ -14,9 +15,10 @@ body {
   position: relative;
   width: 1020px;
   height: 766px;
-  border: 1px black dashed;
+  /*border: 1px black dashed;*/
   display: block;
   overflow:hidden;
+  background: white;
 }
 
 /* header */
@@ -245,7 +247,8 @@ li a img{
 }
 
 li a p{
-  margin-left: 1.6em;
+  margin-left: 0.5em;
+  width: 100%;
   line-height: 3.5em;
   font-size: 1.4em;
   color: #666666;

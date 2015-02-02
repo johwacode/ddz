@@ -17,12 +17,12 @@ img#currentCategory{
   padding: 1.5em;
   box-shadow: 7px 7px 15px 1px rgba(70,70,75,0.3);
   background: #99ccff;
-  background: -moz-linear-gradient(top,  #aaeeff 0%, #53cbf1 40%, #99ccff 100%); /* FF3.6+ */
-  background: linear-gradient(to bottom,  white 0%,#aaeeff 60%,#99ccff 100%); /* W3C */
+  background: -moz-linear-gradient(top,  #aaeeff 0%, #99ddff 40%, #99ccff 100%); /* FF3.6+ */
+  background: linear-gradient(to bottom,  white 0%,#99ddff 60%,#99ccff 100%); /* W3C */
 
 }
 
-#currentCategory ~ h2{
+header h2{
   display: inline-block;
   vertical-align: bottom;
   height: 1.7em;
@@ -50,6 +50,7 @@ img#currentCategory{
   border: #99ccee solid 1px;
   border-left: #cceeff solid 2px;
   border-right: #cceeff solid 2px;
+  cursor: pointer;
 }
 
 .owl-dot.active{
@@ -77,10 +78,8 @@ img#currentCategory{
   height: calc(20em + 4em);
   background-color: #dddddd;
   z-index: -9999;
-}
-
-#entry div{
-  margin-right: 2em;
+  border-top: #cccccc solid 2px;
+  border-bottom: #bbbbbb solid 1px;
 }
 
 #entry img{
@@ -133,9 +132,9 @@ footer{
   vertical-align: middle;
   font-family: "Times New Roman", Times, serif;
   font-size: 3.8em;
-  transform:scale(2.2,1.3);
+  transform:scale(2.1,1.3);
   font-weight: 500;
-  color: #dddddd;
+  color: #eeeedd;
 }
 #zurueckbutton{
   display: inline-block;
@@ -145,7 +144,8 @@ footer{
   font-size: 1.5em;
   text-align: center;
   border: none;
-  box-shadow: 9px 9px 18px 1px rgba(70,70,75,0.5);
+  box-shadow: 5px 5px 15px 1px rgba(70,70,75,0.4),
+              2px 2px 4px 1px rgba(200,200,200,0.6);
   background: #99ccff;
   color: #99ccff;
 }

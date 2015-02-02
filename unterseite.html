@@ -3,7 +3,9 @@
 	<div id="content">
 	  <div class="centring">
 	    <header id="sub" class="centring">
-	      <img id="currentCategory" src="/images/{{image}}.jpg"/>
+		  <a href="/">
+		    <img id="currentCategory" src="/images/{{image}}.jpg"/>
+		  </a>
 	      <h2>{{headline}}</h2>
 		</header>
 		{{> entry}}
@@ -22,7 +24,7 @@
   <article id="entry">
   <div id="owl-example" class="owl-carousel">
     {{#each content}}
-      <div>
+      <div class="slide">
         <img src="/images/{{image}}.jpg"/>
 	    <section>
 	      <h3>{{title}}</h3>
