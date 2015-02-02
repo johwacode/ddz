@@ -42,7 +42,7 @@ img#currentCategory{
   text-align: right;
 }
 
-.positionMarker{
+.positionMarker, .owl-dot{
   display: inline-block;
   width: 1.8em;
   height: 1.8em;
@@ -50,6 +50,10 @@ img#currentCategory{
   border: #99ccee solid 1px;
   border-left: #cceeff solid 2px;
   border-right: #cceeff solid 2px;
+}
+
+.owl-dot.active{
+  background: grey;
 }
 
 
@@ -144,8 +148,4 @@ footer{
   box-shadow: 9px 9px 18px 1px rgba(70,70,75,0.5);
   background: #99ccff;
   color: #99ccff;
-}
-
-.owl-controls{
-  display: none;
 }

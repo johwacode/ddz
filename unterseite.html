@@ -1,16 +1,10 @@
 <template name="Subsite">
-<head>
-	<title> SLUB: Buchauswahl Digitalisierungszentrum</title>
-</head>
-
-<body>
   <div id="page">    
 	<div id="content">
 	  <div class="centring">
 	    <header id="sub" class="centring">
 	      <img id="currentCategory" src="/images/{{image}}.jpg"/>
 	      <h2>{{headline}}</h2>
-		  {{> positionmarker}}
 		</header>
 		{{> entry}}
 	  </div>
@@ -19,7 +13,6 @@
 	  </footer>
 	</div>
   </div>
-</body>
 </template>
 
 
@@ -41,15 +34,6 @@
 	{{/each}}
 	</div>
   </article>
-</template>
-
-
-<template name="positionmarker">
-	<div id="positionMarkerbox">
-	  {{#each content}}
-		<a class="positionMarker {{active}}" href="owl.goTo({{index}})"></a>
-	  {{/each}}
-	</div>
 </template>
 
 

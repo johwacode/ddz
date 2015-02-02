@@ -26,13 +26,13 @@ var digitalisierung = {
 		      image: "geraet",
 		      text: "Um die unterschiedlichsten Medien in großer Stückzahl bearbeiten zu können, stehen dem Dresdner Digitalisierungszentrum vielfältige Geräte zur Verfügung." },
             { title: "Scan-Roboter",
-		      image: "geraet",
+		      image: "Scan-Roboter",
 		      text: "Heutzutage werden immer mehr Bücher digitalisiert. Als Ziel hat es das Buch länger haltbar zu machen, aber auch für alle Menschen verfügbar zu machen. Meistens werden hier die Bücher zur Digitalisierung im Rahmen eines Projektes ausgewählt. Dabei muss man den Fakt beachten, dass das Urheberrecht erst 70 Jahren nach dem Tod erlischt und man die Werke digitalisieren kann. " },
             { title: "HIT Vario digital XL",
-		      image: "geraet",
+		      image: "hit_vario",
 		      text: "Ein paar Daten: Im Jahr werden in der SLUB ca. 15.000 – 20.000 Bücher digitalisiert, was ungefähr 2.000.000 bis 3.000.000 Seiten entspricht. Jedes Buch wird erst geprüft und festgestellt, ob es überhaupt digitalisiert werden darf, im anderen Fall muss es erst restauriert werden." },
 			{ title: "Wolfenbütteler Buchspiegel",
-		      image: "geraet",
+		      image: "wolfenbuettler_buchspiegel",
 		      text: "Ein paar Daten: Im Jahr werden in der SLUB ca. 15.000 – 20.000 Bücher digitalisiert, was ungefähr 2.000.000 bis 3.000.000 Seiten entspricht. Jedes Buch wird erst geprüft und festgestellt, ob es überhaupt digitalisiert werden darf, im anderen Fall muss es erst restauriert werden." }
           ]
 }
@@ -138,9 +138,16 @@ Router.map(function(){
 function setTrigger(){
   Template.Subsite.rendered = function() {
     initCarousel();
+	customPagination();
     Template.Subsite.rendered = null;
   };
 }
+
+function customPagination(){
+  $( ".owl-controls" ).appendTo( $( "header" ) );
+  $( ".owl-controls" ).attr("id","positionMarkerbox");
+}
+
 
 function initCarousel(){
 $("#owl-example").owlCarousel(
@@ -164,7 +171,7 @@ $("#owl-example").owlCarousel(
 		scrollPerPage : false,
 	 
 		//Pagination
-		pagination : false,
+		pagination : true,
 		paginationNumbers: false,
 	 
 		// Responsive 
