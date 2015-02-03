@@ -109,7 +109,7 @@ header h2{
   font-weight: 700;
   line-height: 100%;
   color: black;
-  margin-bottom: 1.1em;
+  margin-bottom: 0em;
 }
 
 #entry section p{
@@ -119,6 +119,7 @@ header h2{
   hyphens: auto;
   text-align: justify;
   white-space: pre-line;
+  margin-top: -0.5em;
 }
 
 #entry section p::first-letter{

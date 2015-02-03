@@ -24,7 +24,7 @@ buchauswahl = {
 				+"sind bereit die Bücher in digitalisierter Form zu lesen. Deswegen ist es wichtig diese "
 				+"zu digitalisieren." },
             { title: "Lang lebe das Buch",
-		      text: "Heutzutage werden immer mehr Bücher digitalisiert. Das Ziel ist das alte Bücher erhalten "
+		      text: "Heutzutage werden immer mehr Bücher digitalisiert. Das Ziel ist es, dass alte Bücher erhalten "
 				+"bleiben, aber auch sie für alle Menschen verfügbar zu machen. Meistens werden hier die "
 				+"Bücher zur Digitalisierung im Rahmen eines Projektes ausgewählt. Dabei muss man den "
 				+"Fakt beachten, dass das Urheberrecht erst 70 Jahren nach dem Tod erlischt und man die "
