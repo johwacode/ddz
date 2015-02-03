@@ -88,12 +88,17 @@ header h2{
   vertical-align: middle;
 }
 
+
 #entry section{
   display: inline-block;
-  width: calc(100% - 15em);
   vertical-align: middle;
   padding-left: 1.2em;
   line-height: 1.5em;
+}
+
+#entry img+section{
+  display: inline-block;
+  width: calc(100% - 15em);
 }
 
 #entry section h3{
@@ -108,18 +113,40 @@ header h2{
 }
 
 #entry section p{
-  text-indent: 1.8em;
+  text-indent: 0.5em;
   font-weight: 500;
   word-break: keep-all;
   hyphens: auto;
   text-align: justify;
+  white-space: pre-line;
+}
+
+#entry section p::first-letter{
+  padding-left: 1.8em;
 }
 
 /* footer */
 
-footer{
-  padding-top: 3.1em;
+footer.centring{
+  position: relative;
+  margin-top: 3.1em;
   text-align: right;
+}
+
+footer:before{
+  content: " ";
+  display: block;
+  position: absolute;
+  /*background: #dddddd;*/
+  width: calc(100% - 4px);
+  height: calc(100% - 5px);
+  /*border: #99ccff solid 1px;*/
+  border-bottom: #99ccff solid 5px;
+  /*box-shadow: 5px 5px 15px 1px rgba(70,70,75,0.4),
+              2px 2px 4px 1px rgba(200,200,200,0.6);
+  */
+  box-shadow: 6px 6px 6px 1px rgba(70,70,75,0.6),
+              3px 3px 3px 1px rgba(200,200,200,0.6);
 }
 
 #zurueckbutton:before{
@@ -138,14 +165,16 @@ footer{
 }
 #zurueckbutton{
   display: inline-block;
+  position: relative;
   height: 1.5em;
   width: 3.8em;
   padding-top: 2.3em;
   font-size: 1.5em;
   text-align: center;
   border: none;
-  box-shadow: 5px 5px 15px 1px rgba(70,70,75,0.4),
-              2px 2px 4px 1px rgba(200,200,200,0.6);
+  box-shadow: 5px 5px 6px 1px rgba(70,70,75,0.6),
+              2px 2px 3px 1px rgba(200,200,200,0.6);
   background: #99ccff;
   color: #99ccff;
+  z-index: 9999999;
 }
