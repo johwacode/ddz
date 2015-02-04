@@ -47,9 +47,9 @@ header h2{
   width: 1.8em;
   height: 1.8em;
   margin-left: 1.5em;
-  border: #99ccee solid 1px;
-  border-left: #cceeff solid 2px;
-  border-right: #cceeff solid 2px;
+  border: #aaaabb  solid 1px;
+  border-left: #aabbcc solid 2px;
+  border-right: #aabbcc solid 2px;
   cursor: pointer;
 }
 
@@ -84,6 +84,7 @@ header h2{
 
 #entry img{
   width: 13em;
+  max-height: 20em;
   display: inline-block;
   vertical-align: middle;
 }

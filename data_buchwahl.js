@@ -34,7 +34,7 @@ buchauswahl = {
 				+"ob es überhaupt digitalisiert werden darf, im anderen Fall muss es erst restauriert "
 				+"werden." },
 			{ title: "Was bringt die Zukunft?",
-			  text: "Wir schätzen, dass der Digitalisierungsprozess in weniger als 5 Jahren ein Ende haben wird. "
+			  text: "Wir schätzen, dass der Mengen-Digitalisierungsprozess in weniger als 5 Jahren ein Ende haben wird. "
 				+"Bis dahin werden unsere ca. 7 festangestellten-, Zeit- und Projektmitarbeiter weiter mit unseren "
 				+"18 Digitalisierungsgeräten Fotos, Bücher, Karten und weiteres abfotograferen. \n"
 				+"Übrigens die Kosten pro normaler digitalisierter Seite (Roboter + Verschleißkosten + Personalkosten) "
