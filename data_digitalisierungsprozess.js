@@ -1,5 +1,5 @@
 digitalisierung = { 
-		  headline: "Der Digitalisierungsprozess",
+		  headline: "Digitalisierungsprozess",
 		  image: "geraet",
 		  content: [
             { title: "Unsere Technik",

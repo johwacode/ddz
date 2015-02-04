@@ -1,5 +1,5 @@
 digitalesBuch = { 
-		  headline: "Das digitale Buch",
+		  headline: "Digitales Buch",
 		  image: "ebook",
 		  content: [
             { title: "Was steckt für Arbeit dahinter?",

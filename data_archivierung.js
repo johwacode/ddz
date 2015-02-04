@@ -1,5 +1,5 @@
 archivierung = { 
-		  headline: "Die Archivierung",
+		  headline: "Archivierung",
 		  image: "archiv",
 		  content: [
             { title: "Wie werden die digitalen Bücher gespeichert?",
